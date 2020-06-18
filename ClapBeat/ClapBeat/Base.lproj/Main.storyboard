@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClapBeat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手拍子の回数を選んでボタンをクリック" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UqH-Ac-ewr">
+                                <rect key="frame" x="116.5" y="344" width="181" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="93k-1s-aU2"/>
+                                    <constraint firstAttribute="width" constant="181" id="CDI-k4-fGF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGi-3N-xCJ">
+                                <rect key="frame" x="15" y="410" width="384" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zGi-3N-xCJ" secondAttribute="height" multiplier="101:20" id="zJC-Mg-xW8"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btn_play"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkc-eN-DUL"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_sound" translatesAutoresizingMaskIntoConstraints="NO" id="nQG-M9-32s">
+                                <rect key="frame" x="88" y="74" width="238" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nQG-M9-32s" secondAttribute="height" multiplier="99:100" id="egU-F8-107"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t5M-vL-8Uz">
+                                <rect key="frame" x="1" y="612" width="414" height="162"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="t5M-vL-8Uz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1bp-82-l2j"/>
+                            <constraint firstItem="zGi-3N-xCJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2xJ-go-Iz4"/>
+                            <constraint firstAttribute="trailing" secondItem="t5M-vL-8Uz" secondAttribute="trailing" constant="16" id="AEd-j2-40U"/>
+                            <constraint firstItem="zGi-3N-xCJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="AMA-VS-aQM"/>
+                            <constraint firstItem="UqH-Ac-ewr" firstAttribute="top" secondItem="nQG-M9-32s" secondAttribute="bottom" constant="30" id="Eqr-Do-w3e"/>
+                            <constraint firstItem="nQG-M9-32s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SSU-ZQ-b0x"/>
+                            <constraint firstItem="UqH-Ac-ewr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cqb-MO-VPX"/>
+                            <constraint firstItem="zGi-3N-xCJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eIk-mX-QDB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zGi-3N-xCJ" secondAttribute="trailing" constant="15" id="lup-7L-opF"/>
+                            <constraint firstItem="UqH-Ac-ewr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="qUa-N3-Giy"/>
+                            <constraint firstItem="nQG-M9-32s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="rSx-OG-ZM8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t5M-vL-8Uz" secondAttribute="bottom" id="yDn-XD-uQx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="t5M-vL-8Uz" id="jre-4g-lgi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_play" width="350" height="80"/>
+        <image name="img_sound" width="99" height="101"/>
+    </resources>
+</document>

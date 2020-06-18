@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClapBeat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手拍子の回数を選んでボタンをクリック" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWi-dq-bsv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="eqO-fD-kIS"/>
+                                    <constraint firstAttribute="width" constant="181" id="wu0-om-A6p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsi-hK-26S">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gsi-hK-26S" secondAttribute="height" multiplier="24:5" id="pAm-gI-ZNZ"/>
+                                </constraints>
+                                <state key="normal" image="btn_play"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bj9-IV-aed"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_sound" translatesAutoresizingMaskIntoConstraints="NO" id="ouc-xp-kF3">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ouc-xp-kF3" secondAttribute="height" multiplier="1:1" id="Czg-gi-aTY"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7V-hV-EYa"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gsi-hK-26S" secondAttribute="trailing" constant="15" id="0Nl-I6-JFV"/>
+                            <constraint firstItem="gsi-hK-26S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="3j5-0a-Mfj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W7V-hV-EYa" secondAttribute="bottom" id="8Cx-QJ-vGd"/>
+                            <constraint firstItem="gsi-hK-26S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CFm-oc-vGg"/>
+                            <constraint firstItem="ouc-xp-kF3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="H0r-U1-LA8"/>
+                            <constraint firstItem="ouc-xp-kF3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IGI-LO-zik"/>
+                            <constraint firstItem="AWi-dq-bsv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LCX-GA-zbj"/>
+                            <constraint firstItem="W7V-hV-EYa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-16" id="c8N-VQ-kMO"/>
+                            <constraint firstItem="AWi-dq-bsv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="dOE-Ct-kub"/>
+                            <constraint firstItem="AWi-dq-bsv" firstAttribute="top" secondItem="ouc-xp-kF3" secondAttribute="bottom" constant="30" id="hQE-nU-pXk"/>
+                            <constraint firstItem="gsi-hK-26S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pqW-AB-TOs"/>
+                            <constraint firstAttribute="trailing" secondItem="W7V-hV-EYa" secondAttribute="trailing" constant="-16" id="qFd-5g-JwY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PickerView" destination="W7V-hV-EYa" id="dim-BI-i7z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_play" width="350" height="80"/>
+        <image name="img_sound" width="99" height="101"/>
+    </resources>
+</document>

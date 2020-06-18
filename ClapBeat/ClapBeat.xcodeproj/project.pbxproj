@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECDB5192248F47FB00BF87E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB5191248F47FB00BF87E5 /* AppDelegate.swift */; };
+		ECDB5194248F47FB00BF87E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB5193248F47FB00BF87E5 /* SceneDelegate.swift */; };
+		ECDB5196248F47FB00BF87E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB5195248F47FB00BF87E5 /* ViewController.swift */; };
+		ECDB519B248F47FF00BF87E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDB519A248F47FF00BF87E5 /* Assets.xcassets */; };
+		ECDB519E248F47FF00BF87E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDB519C248F47FF00BF87E5 /* LaunchScreen.storyboard */; };
+		ECDB51A6248F554600BF87E5 /* Clap.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB51A5248F554600BF87E5 /* Clap.swift */; };
+		ECDB51A9248F55FB00BF87E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDB51A8248F55FB00BF87E5 /* AudioToolbox.framework */; };
+		ECDB51AB248F565A00BF87E5 /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECDB51AA248F565A00BF87E5 /* clap.wav */; };
+		ECDB51D3248F780000BF87E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDB51D1248F780000BF87E5 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ECDB518E248F47FB00BF87E5 /* ClapBeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClapBeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDB5191248F47FB00BF87E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECDB5193248F47FB00BF87E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ECDB5195248F47FB00BF87E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECDB519A248F47FF00BF87E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECDB519D248F47FF00BF87E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECDB519F248F47FF00BF87E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECDB51A5248F554600BF87E5 /* Clap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clap.swift; sourceTree = "<group>"; };
+		ECDB51A8248F55FB00BF87E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		ECDB51AA248F565A00BF87E5 /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap.wav; sourceTree = "<group>"; };
+		ECDB51D2248F780000BF87E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../Downloads/ClapBeat/ClapBeat/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECDB518B248F47FB00BF87E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDB51A9248F55FB00BF87E5 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECDB5185248F47FB00BF87E5 = {
+			isa = PBXGroup;
+			children = (
+				ECDB5190248F47FB00BF87E5 /* ClapBeat */,
+				ECDB518F248F47FB00BF87E5 /* Products */,
+				ECDB51A7248F55FB00BF87E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECDB518F248F47FB00BF87E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECDB518E248F47FB00BF87E5 /* ClapBeat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECDB5190248F47FB00BF87E5 /* ClapBeat */ = {
+			isa = PBXGroup;
+			children = (
+				ECDB5191248F47FB00BF87E5 /* AppDelegate.swift */,
+				ECDB5193248F47FB00BF87E5 /* SceneDelegate.swift */,
+				ECDB5195248F47FB00BF87E5 /* ViewController.swift */,
+				ECDB51A5248F554600BF87E5 /* Clap.swift */,
+				ECDB51D1248F780000BF87E5 /* Main.storyboard */,
+				ECDB519A248F47FF00BF87E5 /* Assets.xcassets */,
+				ECDB519C248F47FF00BF87E5 /* LaunchScreen.storyboard */,
+				ECDB51AA248F565A00BF87E5 /* clap.wav */,
+				ECDB519F248F47FF00BF87E5 /* Info.plist */,
+			);
+			path = ClapBeat;
+			sourceTree = "<group>";
+		};
+		ECDB51A7248F55FB00BF87E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECDB51A8248F55FB00BF87E5 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECDB518D248F47FB00BF87E5 /* ClapBeat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECDB51A2248F47FF00BF87E5 /* Build configuration list for PBXNativeTarget "ClapBeat" */;
+			buildPhases = (
+				ECDB518A248F47FB00BF87E5 /* Sources */,
+				ECDB518B248F47FB00BF87E5 /* Frameworks */,
+				ECDB518C248F47FB00BF87E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClapBeat;
+			productName = ClapBeat;
+			productReference = ECDB518E248F47FB00BF87E5 /* ClapBeat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECDB5186248F47FB00BF87E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Pan Zun";
+				TargetAttributes = {
+					ECDB518D248F47FB00BF87E5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = ECDB5189248F47FB00BF87E5 /* Build configuration list for PBXProject "ClapBeat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECDB5185248F47FB00BF87E5;
+			productRefGroup = ECDB518F248F47FB00BF87E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECDB518D248F47FB00BF87E5 /* ClapBeat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECDB518C248F47FB00BF87E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDB51AB248F565A00BF87E5 /* clap.wav in Resources */,
+				ECDB519E248F47FF00BF87E5 /* LaunchScreen.storyboard in Resources */,
+				ECDB519B248F47FF00BF87E5 /* Assets.xcassets in Resources */,
+				ECDB51D3248F780000BF87E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECDB518A248F47FB00BF87E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDB5196248F47FB00BF87E5 /* ViewController.swift in Sources */,
+				ECDB51A6248F554600BF87E5 /* Clap.swift in Sources */,
+				ECDB5192248F47FB00BF87E5 /* AppDelegate.swift in Sources */,
+				ECDB5194248F47FB00BF87E5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ECDB519C248F47FF00BF87E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECDB519D248F47FF00BF87E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ECDB51D1248F780000BF87E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECDB51D2248F780000BF87E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECDB51A0248F47FF00BF87E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECDB51A1248F47FF00BF87E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECDB51A3248F47FF00BF87E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ClapBeat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.al-j.panzun.ClapBeat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ECDB51A4248F47FF00BF87E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ClapBeat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.al-j.panzun.ClapBeat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECDB5189248F47FB00BF87E5 /* Build configuration list for PBXProject "ClapBeat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDB51A0248F47FF00BF87E5 /* Debug */,
+				ECDB51A1248F47FF00BF87E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECDB51A2248F47FF00BF87E5 /* Build configuration list for PBXNativeTarget "ClapBeat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDB51A3248F47FF00BF87E5 /* Debug */,
+				ECDB51A4248F47FF00BF87E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECDB5186248F47FB00BF87E5 /* Project object */;
+}
