@@ -10,18 +10,29 @@ import UIKit
 import CoreLocation
 import GoogleMaps
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
 
     @IBOutlet weak var accuracyLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
     @IBOutlet weak var longitudeLabel: UILabel!
-    @IBOutlet weak var mapView: GMSmapview!
+    @IBOutlet weak var mapView: GMSMapView!
+    
+    let locationManager = CLLocationManager()
+    
     //Location Manager
     func initMapView() {
         mapView.isMyLocationEnabled = true
         mapView.delegate = self
     }
-    let locationManager = CLLocationManager()
+    
+    func initLocation() {
+        //Location Managerの設定
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        //位置情報取得開始
+        locationManager.startUpdatingLocation()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,22 +43,9 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    func initLocation() {
-        //Location Managerの設定
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        //位置情報取得開始
-        locationManager.startUpdatingLocation()
-    }
+    
     //位置情報が更新された時呼ばれるメソッド
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        // GoogleMapに現在位置を表示するために現在位置情報を渡す
-        let pos : GMSCameraPosition = GMSCameraPosition.camera(
-            withLatitude: newLocation.coordinate.latitude, // 緯度
-            longitude: newLocation.coordinate.longitude, // 経度
-            zoom: 16.0 // ズーム（0 - 19）数が大きいほどクローズアップ
-        )
-        mapView.camera = pos
         guard let newLocation = locations.last else {
             return
         }
@@ -62,7 +60,15 @@ class SecondViewController: UIViewController {
         } else {
             accuracyLabel.text = String(format: "低 (%.0f m)", accuracy)
         }
+        
+        let pos : GMSCameraPosition = GMSCameraPosition.camera(
+               withLatitude: newLocation.coordinate.latitude, // 緯度
+               longitude: newLocation.coordinate.longitude, // 経度
+               zoom: 16.0 // ズーム（0 - 19）数が大きいほどクローズアップ
+           )
+           mapView.camera = pos
     }
+    
     //位置取得失敗時に呼ばれるメソッド
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         let message = "位置情報の取得に失敗しました。"
